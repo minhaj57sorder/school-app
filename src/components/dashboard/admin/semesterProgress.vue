@@ -1,5 +1,4 @@
 <template>
-  <div>Sohag sorder</div>
   <DoughnutChart v-bind="doughnutChartProps" />
 </template>
 
@@ -44,4 +43,4 @@ const { doughnutChartProps, doughnutChartRef } = useDoughnutChart({
 });
 </script>
 
-<style></style>
+<style scoped></style>
