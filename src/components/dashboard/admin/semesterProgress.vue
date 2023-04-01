@@ -1,5 +1,5 @@
 <template>
-  <div>Sohag</div>
+  <div>Sohag Khan</div>
   <DoughnutChart v-bind="doughnutChartProps" />
 </template>
 
