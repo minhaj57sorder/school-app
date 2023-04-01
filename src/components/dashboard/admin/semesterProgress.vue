@@ -1,4 +1,5 @@
 <template>
+  <div>Niloy</div>
   <DoughnutChart v-bind="doughnutChartProps" />
 </template>
 
