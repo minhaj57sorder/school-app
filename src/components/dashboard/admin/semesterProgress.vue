@@ -1,5 +1,6 @@
 <template>
   <div>Dought</div>
+  <div>Alamin</div>
   <DoughnutChart v-bind="doughnutChartProps" />
 </template>
 
