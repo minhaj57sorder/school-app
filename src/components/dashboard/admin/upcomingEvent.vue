@@ -6,7 +6,7 @@
       </div>
       <div><q-icon class="add text-h6" name="add"></q-icon></div>
     </div>
-    <div class="row justify-between q-mt-lg">
+    <div class="row justify-between q-mt-lg upcome-event-date">
       <div class="">
         <div class="Month">10 Jan</div>
       </div>
@@ -16,7 +16,6 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-
           <div class="calendar-box">
             <div class="calandar-event-name">
               <div>Botony</div>
@@ -185,5 +184,22 @@
 
 .calandar-event-name {
   padding-left: 10px;
+}
+
+.upcome-event-date:before {
+  content: "";
+  position: absolute;
+  background: #ebebeb;
+  width: 100%;
+  height: 1px;
+  top: 10px;
+}
+
+.upcome-event-date {
+  position: relative;
+  margin: 38px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
