@@ -16,9 +16,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -28,9 +31,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -40,9 +46,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -58,9 +67,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,9 +82,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -82,9 +97,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -94,9 +112,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -106,9 +127,12 @@
       <div class="">
         <div class="row items-center">
           <div class="q-mr-md">08:00 am</div>
-          <div>
-            <div>Botony</div>
-            <div>Lorem ipsum sit amet</div>
+
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div>Lorem ipsum sit amet</div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,6 +159,31 @@
   font-size: 16px;
   font-weight: 600;
 }
-.dot {
+.calendar-box::before {
+  content: "";
+  width: 4px;
+  height: 85%;
+  position: absolute;
+  border-radius: 25px;
+  background-color: blueviolet;
+}
+
+.calendar-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-box:before {
+  content: "";
+  position: absolute;
+  background: #3d5ee1;
+  width: 4px;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.calandar-event-name {
+  padding-left: 10px;
 }
 </style>
