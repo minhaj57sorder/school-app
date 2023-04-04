@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-pa-lg">
+  <q-card class="q-pa-lg b">
     <div class="row justify-between">
       <div class="">
         <div class="Upcoming">Upcoming Even</div>
@@ -56,7 +56,7 @@
       </div>
       <div>08:00 - 09:00 am</div>
     </div>
-    <div class="row justify-between q-mb-sm q-mt-lg">
+    <div class="row justify-between q-mt-lg upcome-event-date">
       <div class="">
         <div class="Month">10 Jan</div>
       </div>
@@ -189,17 +189,20 @@
 .upcome-event-date:before {
   content: "";
   position: absolute;
-  background: #ebebeb;
-  width: 100%;
+  background: #bbb8b8;
+  width: 80%;
   height: 1px;
-  top: 10px;
+  top: 12px;
+  left: 56px;
 }
 
 .upcome-event-date {
   position: relative;
-  margin: 38px 0 0 0;
-  display: flex;
+  margin: 38px 0px;
   align-items: center;
-  justify-content: space-between;
+}
+
+.b {
+  background-color: white;
 }
 </style>
