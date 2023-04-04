@@ -1,6 +1,6 @@
 <template>
-  <div class="b">
-    <q-date class="w" v-model="date" minimal />
+  <div>
+    <q-date class="w q-mb-xs" v-model="date" minimal />
   </div>
 </template>
 
@@ -8,6 +8,5 @@
 <style scoped>
 .w {
   width: 100%;
-  box-shadow: none;
 }
 </style>
