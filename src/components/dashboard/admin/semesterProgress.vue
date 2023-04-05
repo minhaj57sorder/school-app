@@ -45,4 +45,5 @@ const { doughnutChartProps, doughnutChartRef } = useDoughnutChart({
 });
 </script>
 
-<style></style>
+<style>
+</style>
