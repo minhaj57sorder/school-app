@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-pa-lg b">
+  <div class="q-pa-lg">
     <div class="row justify-between">
       <div class="">
         <div class="Upcoming">Upcoming Even</div>
@@ -12,19 +12,19 @@
       </div>
       <div><q-icon class="dot text-h6" name="more_horiz"></q-icon></div>
     </div>
-    <div class="row justify-between q-mt-sm">
+    <div class="row justify-between items-center q-mt-sm">
       <div class="">
         <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
+          <div class="q-mr-sm text-12">08:00 am</div>
           <div class="calendar-box">
             <div class="calandar-event-name">
               <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
+              <div class="text-12">Lorem ipsum sit amet</div>
             </div>
           </div>
         </div>
       </div>
-      <div>08:00 - 09:00 am</div>
+      <div class="text-12">08:00 - 09:00 am</div>
     </div>
     <div class="row justify-between q-mt-sm">
       <div class="">
@@ -137,12 +137,15 @@
       </div>
       <div>08:00 - 09:00 am</div>
     </div>
-  </q-card>
+  </div>
 </template>
 
 <script setup></script>
 
 <style scoped>
+.text-12 {
+  font-size: 12px;
+}
 .Upcoming {
   font-size: 18px;
   font-weight: 400;
@@ -190,7 +193,7 @@
   content: "";
   position: absolute;
   background: #bbb8b8;
-  width: 80%;
+  width: calc(100% - 80px);
   height: 1px;
   top: 12px;
   left: 56px;
