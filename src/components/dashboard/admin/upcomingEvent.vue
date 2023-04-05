@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-pa-lg b">
+  <div class="q-pa-lg">
     <div class="row justify-between">
       <div class="">
         <div class="Upcoming">Upcoming Even</div>
@@ -14,6 +14,7 @@
         <q-icon class="dot text-h6" name="more_horiz"></q-icon>
       </div>
     </div>
+<<<<<<< HEAD
     <div
       class="row justify-between q-mt-sm items-center"
       v-for="(item, index) in events"
@@ -26,11 +27,25 @@
             <div class="calandar-event-name">
               <div>{{ item.title }}</div>
               <div>{{ item.subtitle }}</div>
+=======
+    <div class="row justify-between items-center q-mt-sm">
+      <div class="">
+        <div class="row items-center">
+          <div class="q-mr-sm text-12">08:00 am</div>
+          <div class="calendar-box">
+            <div class="calandar-event-name">
+              <div>Botony</div>
+              <div class="text-12">Lorem ipsum sit amet</div>
+>>>>>>> 1040d3227b8e81bd620438b482fb8a6f2491942a
             </div>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div>{{ item.time }}</div>
+=======
+      <div class="text-12">08:00 - 09:00 am</div>
+>>>>>>> 1040d3227b8e81bd620438b482fb8a6f2491942a
     </div>
 
     <div class="row justify-between q-mt-lg upcome-event-date">
@@ -58,7 +73,7 @@
       </div>
       <div>{{ item.date }}</div>
     </div>
-  </q-card>
+  </div>
 </template>
 
 <script setup>
@@ -120,6 +135,9 @@ const events = [
 </script>
 
 <style scoped>
+.text-12 {
+  font-size: 12px;
+}
 .Upcoming {
   font-size: 18px;
   font-weight: 400;
