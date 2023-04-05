@@ -8,5 +8,6 @@
 <style scoped>
 .w {
   width: 100%;
+  box-shadow: none;
 }
 </style>

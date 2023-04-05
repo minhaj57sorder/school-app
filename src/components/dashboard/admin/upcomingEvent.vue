@@ -10,137 +10,114 @@
       <div class="">
         <div class="Month">10 Jan</div>
       </div>
-      <div><q-icon class="dot text-h6" name="more_horiz"></q-icon></div>
+      <div>
+        <q-icon class="dot text-h6" name="more_horiz"></q-icon>
+      </div>
     </div>
-    <div class="row justify-between q-mt-sm">
+    <div
+      class="row justify-between q-mt-sm items-center"
+      v-for="(item, index) in events"
+      :key="index"
+    >
       <div class="">
         <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
+          <div class="q-mr-md">{{ item.time }}</div>
           <div class="calendar-box">
             <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
+              <div>{{ item.title }}</div>
+              <div>{{ item.subtitle }}</div>
             </div>
           </div>
         </div>
       </div>
-      <div>08:00 - 09:00 am</div>
+      <div>{{ item.time }}</div>
     </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
 
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
-
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
     <div class="row justify-between q-mt-lg upcome-event-date">
       <div class="">
         <div class="Month">10 Jan</div>
       </div>
       <div><q-icon class="dot text-h6" name="more_horiz"></q-icon></div>
     </div>
-    <div class="row justify-between q-mt-sm">
+    <div
+      class="row justify-between q-mt-sm items-center"
+      v-for="(item, index) in event"
+      :key="index"
+    >
       <div class="">
         <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
+          <div class="q-mr-md">{{ item.time }}</div>
 
           <div class="calendar-box">
             <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
+              <div>{{ item.title }}</div>
+              <div>{{ item.subtitle }}</div>
             </div>
           </div>
         </div>
       </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
-
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
-
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
-
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
-    </div>
-    <div class="row justify-between q-mt-sm">
-      <div class="">
-        <div class="row items-center">
-          <div class="q-mr-md">08:00 am</div>
-
-          <div class="calendar-box">
-            <div class="calandar-event-name">
-              <div>Botony</div>
-              <div>Lorem ipsum sit amet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>08:00 - 09:00 am</div>
+      <div>{{ item.date }}</div>
     </div>
   </q-card>
 </template>
 
-<script setup></script>
+<script setup>
+const event = [
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+    date: "08:00 - 09:00 am",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+    date: "08:00 - 09:00 am",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+    date: "08:00 - 09:00 am",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+    date: "08:00 - 09:00 am",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+    date: "08:00 - 09:00 am",
+  },
+];
+
+const events = [
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+  },
+  {
+    time: "09:00 am",
+    title: "Botony",
+    subtitle: "Lorem ipsum sit amet",
+  },
+];
+</script>
 
 <style scoped>
 .Upcoming {
@@ -190,10 +167,10 @@
   content: "";
   position: absolute;
   background: #bbb8b8;
-  width: 80%;
+  width: calc(100% - 80px);
   height: 1px;
   top: 12px;
-  left: 56px;
+  left: 55px;
 }
 
 .upcome-event-date {
