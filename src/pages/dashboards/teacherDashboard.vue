@@ -11,6 +11,9 @@
           </div>
 
           <div class="col-12">
+            <teachingActivity />
+          </div>
+          <div class="col-12">
             <teachingHistory />
           </div>
         </div>
@@ -31,5 +34,6 @@ import semesterProgress from "src/components/dashboard/admin/semesterProgress.vu
 import upcomingEvent from "src/components/dashboard/admin/upcomingEvent.vue";
 import calendarSection from "src/components/dashboard/admin/calendarSection.vue";
 import teachingHistory from "src/components/dashboard/admin/teachingHistory.vue";
+import teachingActivity from "src/components/dashboard/admin/teachingActivity.vue";
 </script>
 <style scoped></style>
