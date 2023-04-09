@@ -50,6 +50,11 @@ const linksList = [
     caption: "teacher related",
     link: "/teacher_dashboard",
   },
+  {
+    title: "Student Dashboard",
+    caption: "student related",
+    link: "/student_dashboard",
+  },
 ];
 
 export default defineComponent({
