@@ -21,11 +21,7 @@
       <q-list>
         <q-item-label header> Essential Links </q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink />
       </q-list>
     </q-drawer>
 
@@ -35,45 +31,11 @@
   </q-layout>
 </template>
 
-<script>
+<script setup>
 import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
-
-const linksList = [
-  {
-    title: "Student Dashboard",
-    caption: "student related",
-    link: "/",
-  },
-  {
-    title: "Teacher Dashboard",
-    caption: "teacher related",
-    link: "/teacher_dashboard",
-  },
-  {
-    title: "Student Dashboard",
-    caption: "student related",
-    link: "/student_dashboard",
-  },
-];
-
-export default defineComponent({
-  name: "MainLayout",
-
-  components: {
-    EssentialLink,
-  },
-
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
-  },
-});
+const leftDrawerOpen = ref(false);
+const toggleLeftDrawer = () => {
+  leftDrawerOpen.value = !leftDrawerOpen.value;
+};
 </script>
