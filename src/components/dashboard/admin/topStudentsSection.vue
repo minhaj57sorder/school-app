@@ -7,7 +7,7 @@
     <q-markup-table>
       <thead>
         <tr>
-          <td>dddddddddddddd</td>
+          <td>Student Id</td>
           <td>Name</td>
           <td>Mark</td>
           <td>Persentage</td>
