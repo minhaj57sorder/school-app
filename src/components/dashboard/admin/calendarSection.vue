@@ -8,6 +8,7 @@
 <style>
 .w {
   width: 100%;
+  box-shadow: none;
 }
 .upcoming-calander .q-date {
   box-shadow: none;
