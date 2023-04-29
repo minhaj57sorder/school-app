@@ -13,7 +13,7 @@
           expand-separator
           icon="mail"
           label="Inbox"
-          caption="5 unread emails"
+          caption="2 unread emails"
           default-opened
         >
           <q-item clickable v-ripple to="/">
