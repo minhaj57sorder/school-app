@@ -96,23 +96,4 @@
   </div>
 </template>
 
-<script setup>
-import { defineComponent } from "vue";
-// const linksList = [
-//   {
-//     title: "Student Dashboard",
-//     caption: "student related",
-//     link: "/",
-//   },
-//   {
-//     title: "Teacher Dashboard",
-//     caption: "teacher related",
-//     link: "/teacher_dashboard",
-//   },
-//   {
-//     title: "Student Dashboard",
-//     caption: "student related",
-//     link: "/student_dashboard",
-//   },
-// ];
-</script>
+<script setup></script>
