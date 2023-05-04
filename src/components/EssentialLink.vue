@@ -20,7 +20,7 @@
           </q-item-section>
           <q-item-section> Teacher Dashboard </q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="teacher_dashboard">
+        <q-item clickable v-ripple to="student_dashboard">
           <q-item-section avatar>
             <q-icon name="" />
           </q-item-section>
@@ -41,25 +41,25 @@
         default-opened
         header-class="text-primary"
       >
-        <q-item clickable v-ripple to="/">
+        <q-item clickable v-ripple to="student_list">
           <q-item-section avatar>
             <q-icon name="" />
           </q-item-section>
           <q-item-section> Student List </q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="/">
+        <q-item clickable v-ripple to="student_view">
           <q-item-section avatar>
             <q-icon name="" />
           </q-item-section>
           <q-item-section> Student View </q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="teacher_dashboard">
+        <q-item clickable v-ripple to="student_add">
           <q-item-section avatar>
             <q-icon name="" />
           </q-item-section>
           <q-item-section> Student Add </q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="teacher_dashboard">
+        <q-item clickable v-ripple to="student_edit">
           <q-item-section avatar>
             <q-icon name="" />
           </q-item-section>

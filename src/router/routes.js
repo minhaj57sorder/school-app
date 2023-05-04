@@ -8,6 +8,11 @@ const routes = [
         path: "/teacher_dashboard",
         component: () => import("pages/dashboards/teacherDashboard.vue"),
       },
+      {
+        path: "/student_list",
+        component: () =>
+          import("src/components/dashboard/student/studentList.vue"),
+      },
     ],
   },
 
