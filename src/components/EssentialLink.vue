@@ -9,36 +9,15 @@
         default-opened
       >
         <q-item clickable v-ripple to="/">
-          <q-item-section
-            class="text-center text-bold text-white bg-orange"
-            style="border-radius: 10px; padding: 12px; font-size: 16px"
-          >
-            Admin Dashboard
-          </q-item-section>
+          <q-item-section class="text-center"> Admin Dashboard </q-item-section>
         </q-item>
         <q-item clickable v-ripple to="/teacher_dashboard">
-          <q-item-section
-            class="text-center text-bold text-white bg-blue"
-            style="
-              border-radius: 10px;
-              padding: 12px;
-              margin-top: -10px;
-              font-size: 16px;
-            "
-          >
+          <q-item-section class="text-center">
             Teacher Dashboard
           </q-item-section>
         </q-item>
         <q-item clickable v-ripple to="/student_dashboard">
-          <q-item-section
-            class="text-center text-bold text-white bg-blue"
-            style="
-              border-radius: 10px;
-              padding: 12px;
-              margin-top: -10px;
-              font-size: 16px;
-            "
-          >
+          <q-item-section class="text-center">
             Student Dashboard
           </q-item-section>
         </q-item>
@@ -47,17 +26,12 @@
       <q-expansion-item
         group="somegroup"
         icon="perm_identity"
-        label="Second"
+        label="Student Dashboard"
         header-class="text-teal"
       >
-        <q-card>
-          <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-            eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-            dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
-          </q-card-section>
-        </q-card>
+        <q-item clickable v-ripple to="/admin_Student">
+          <q-item-section class="text-center"> Student list </q-item-section>
+        </q-item>
       </q-expansion-item>
 
       <q-expansion-item
