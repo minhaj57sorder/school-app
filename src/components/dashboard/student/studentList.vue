@@ -41,7 +41,7 @@ const columns = [
   { name: "dob", label: "DOB", align: "left", field: "carbs" },
 
   {
-    name: "parent name",
+    name: "Sohag",
     label: "Parent Name",
     align: "left",
     field: "protein",
