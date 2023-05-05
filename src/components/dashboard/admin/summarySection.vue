@@ -1,61 +1,114 @@
 <template>
-  <div class="row q-col-gutter-lg">
-    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-      <q-card class="q-pa-lg row justify-between">
+  <div class="">
+    <div class="row justify-between items-center">
+      <div class="text-h6">Welcome Admin!</div>
+      <div>
+        <span class="q-mr-xs text-bold text-grey-7">Home</span> /
+        <span class="q-ml-xs text-bold text-grey-7">Admin</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row q-col-gutter-md q-mt-md">
+    <div class="col-lg-3 col-md-6 col-xs-12 col-12">
+      <q-card class="row justify-between q-pa-md">
         <div>
-          <div>Students</div>
-          <div class="text-h6">3343</div>
+          <div class="text-grey-7">Student</div>
+          <div class="text-h6">50055</div>
         </div>
-        <div class="text-h4 card-icon text-light-blue-5 bg-light-blue-1">
-          <q-icon name="boy"></q-icon>
+        <div
+          class="bg-blue-2 flex items-center"
+          style="
+            border-radius: 8px;
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            :flex ;
+          "
+        >
+          <q-img
+            src="https://preschool.dreamguystech.com/template/assets/img/icons/dash-icon-01.svg"
+            style="width: 35px; height: 30px"
+          ></q-img>
         </div>
       </q-card>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-      <q-card class="q-pa-lg row justify-between">
+    <div class="col-lg-3 col-md-6 col-xs-12 col-12">
+      <q-card class="row justify-between q-pa-md">
         <div>
-          <div>Awards</div>
-          <div class="text-h6">50+</div>
+          <div class="text-grey-7">Student</div>
+          <div class="text-h6">50055</div>
         </div>
-        <div class="text-h4 card-icon text-light-blue-5 bg-light-blue-1">
-          <q-icon name="badge"></q-icon>
+        <div
+          class="bg-blue-2 flex items-center"
+          style="
+            border-radius: 8px;
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            :flex ;
+          "
+        >
+          <q-img
+            src="https://preschool.dreamguystech.com/template/assets/img/icons/dash-icon-01.svg"
+            style="width: 35px; height: 30px"
+          ></q-img>
         </div>
       </q-card>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-      <q-card class="q-pa-lg row justify-between">
+    <div class="col-lg-3 col-md-6 col-xs-12 col-12">
+      <q-card class="row justify-between q-pa-md">
         <div>
-          <div>Department</div>
-          <div class="text-h6">30+</div>
+          <div class="text-grey-7">Student</div>
+          <div class="text-h6">50055</div>
         </div>
-        <div class="text-h4 card-icon text-light-blue-5 bg-light-blue-1">
-          <q-icon name="device_hub"></q-icon>
+        <div
+          class="bg-blue-2 flex items-center"
+          style="
+            border-radius: 8px;
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            :flex ;
+          "
+        >
+          <q-img
+            src="src/image/aa(2).jpg"
+            style="width: 35px; height: 30px"
+          ></q-img>
         </div>
       </q-card>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-      <q-card class="q-pa-lg row justify-between">
+    <div class="col-lg-3 col-md-6 col-xs-12 col-12">
+      <q-card class="row justify-between q-pa-md">
         <div>
-          <div>Revenue</div>
-          <div class="text-h6">$505</div>
+          <div class="text-grey-7">Student</div>
+          <div class="text-h6">50055</div>
         </div>
-        <div class="text-h4 card-icon text-light-blue-5 bg-light-blue-1">
-          <q-icon name="paid"></q-icon>
+        <div
+          class="bg-blue-2 flex items-center"
+          style="
+            border-radius: 8px;
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            :flex ;
+          "
+        >
+          <q-img
+            src="https://preschool.dreamguystech.com/template/assets/img/icons/dash-icon-01.svg"
+            style="width: 35px; height: 30px"
+          ></q-img>
         </div>
       </q-card>
     </div>
   </div>
 </template>
-
-<script setup></script>
-
-<style scoped>
-.card-icon {
-  width: 45px;
-  height: 45px;
-  border-radius: 8px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>

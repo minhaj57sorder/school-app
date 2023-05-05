@@ -17,5 +17,4 @@ import summarySection from "src/components/dashboard/admin/summarySection.vue";
 import topStudentsSection from "src/components/dashboard/admin/topStudentsSection.vue";
 import studentActivity from "src/components/dashboard/admin/studentActivity.vue";
 </script>
-<style scoped>
-</style>
+<style scoped></style>

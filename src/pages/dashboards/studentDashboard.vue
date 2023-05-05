@@ -1,5 +1,14 @@
 <template>
   <q-page class="q-pa-lg">
+    <div class="q-mb-lg">
+      <div class="row justify-between items-center">
+        <div class="text-h6">Welcome Admin!</div>
+        <div>
+          <span class="q-mr-xs text-bold text-grey-7">Home</span> /
+          <span class="q-ml-xs text-bold text-grey-7">Admin</span>
+        </div>
+      </div>
+    </div>
     <div class="row q-col-gutter-lg">
       <div class="col-lg-8 col-md-12 col-12 q-col-gutter-lg">
         <div class="col-lg-8 col-md-12 col-sm-12 col-12">
