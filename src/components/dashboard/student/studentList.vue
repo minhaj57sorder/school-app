@@ -1,4 +1,34 @@
 <template>
+  <div class="row q-col-gutter-lg">
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+      <div class="q-pa-md">
+        <div class="q-gutter-md" style="max-width: 300px">
+          <q-input outlined v-model="text" label="Search by ID ..." />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+      <div class="q-pa-md">
+        <div class="q-gutter-md" style="max-width: 300px">
+          <q-input outlined v-model="text" label="Search by Name ..." />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+      <div class="q-pa-md">
+        <div class="q-gutter-md" style="max-width: 300px">
+          <q-input outlined v-model="text" label="Search by Phone ..." />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+      <div class="q-pa-md">
+        <div class="q-gutter-md" style="max-width: 300px">
+          <q-btn outlined v-model="text" color="blue" label="Search" />
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="q-pa-md">
     <q-table
       flat
@@ -41,7 +71,7 @@ const columns = [
   { name: "dob", label: "DOB", align: "left", field: "carbs" },
 
   {
-    name: "Sohag",
+    name: "parent name",
     label: "Parent Name",
     align: "left",
     field: "protein",
@@ -59,6 +89,12 @@ const columns = [
     align: "left",
     field: "address",
   },
+  {
+    name: "action",
+    label: "Action",
+    align: "left",
+    field: "action",
+  },
 ];
 
 const rows = [
@@ -69,9 +105,8 @@ const rows = [
     carbs: "2 Feb 2002",
     protein: "Jeffrey Wong",
     sodium: "097 3584 5870",
-    calcium: "14%",
-    iron: "1%",
     address: "911 Deer Ridge Drive,USA",
+    action: "",
   },
   {
     name: "Ice cream sandwich",
