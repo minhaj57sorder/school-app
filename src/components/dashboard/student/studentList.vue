@@ -1,23 +1,27 @@
 <template>
-  <div class="row q-col-gutter-lg">
+  <div class="row justify-between items-center">
+    <div class="text-h6">Students</div>
+    <div>Student<span> / </span>All Students</div>
+  </div>
+  <div class="row q-col-gutter-lg items-center">
     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
       <div class="q-pa-md">
         <div class="q-gutter-md" style="max-width: 300px">
-          <q-input outlined v-model="text" label="Search by ID ..." />
+          <q-input outlined v-model="text" dense label="Search by ID ..." />
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
       <div class="q-pa-md">
         <div class="q-gutter-md" style="max-width: 300px">
-          <q-input outlined v-model="text" label="Search by Name ..." />
+          <q-input outlined v-model="text" dense label="Search by Name ..." />
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
       <div class="q-pa-md">
         <div class="q-gutter-md" style="max-width: 300px">
-          <q-input outlined v-model="text" label="Search by Phone ..." />
+          <q-input outlined v-model="text" dense label="Search by Phone ..." />
         </div>
       </div>
     </div>
@@ -25,6 +29,50 @@
       <div class="q-pa-md">
         <div class="q-gutter-md" style="max-width: 300px">
           <q-btn outlined v-model="text" color="blue" label="Search" />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+      <div class="q-ml-md">
+        <div class="row q-ml-md items-center">
+          <span class="q-mr-sm">Show</span>
+          <div class="">
+            <div class="row q-gutter-md" style="max-width: 350px">
+              <q-select
+                outlined
+                v-model="model"
+                :options="options"
+                dense
+                label="10"
+              />
+            </div>
+          </div>
+          <span class="q-ml-sm">entries</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="row row q-col-gutter-lg items-center">
+        <div class=" ">
+          <q-btn color="blue" class="row justify between items-center">
+            <q-icon name="format_list_bulleted" color=""></q-icon>
+          </q-btn>
+        </div>
+        <div>
+          <q-btn color="white" class="row justify between items-center">
+            <q-icon name="grid_view" color="black"></q-icon>
+          </q-btn>
+        </div>
+        <div>
+          <q-btn color="blue" class="row justify between items-center">
+            <q-icon name="download" color=""></q-icon>Download
+          </q-btn>
+        </div>
+        <div>
+          <q-btn color="blue" class="row justify between items-center">
+            <q-icon name="add" color=""></q-icon>
+          </q-btn>
         </div>
       </div>
     </div>
@@ -216,6 +264,8 @@ export default {
               selected.value.length > 1 ? "s" : ""
             } selected of ${rows.length}`;
       },
+      model: ref(null),
+      options: ["10", "25", "50", "100"],
     };
   },
 };
