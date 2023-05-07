@@ -14,7 +14,11 @@ const routes = [
       },
       {
         path: "/admin_Student",
-        component: () => import("pages/dashboards/adminStudent.vue"),
+        component: () => import("pages/student/adminStudent.vue"),
+      },
+      {
+        path: "/student_Views",
+        component: () => import("pages/student/studentViews.vue"),
       },
     ],
   },
