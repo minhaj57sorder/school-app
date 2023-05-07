@@ -5,9 +5,9 @@
         <div class="text-h6 text-bold">Student</div>
       </div>
       <div>
-        <div class="text-grey-7" style="font-size: 16px">
-          <q-btn flat clickable-none>Student</q-btn> /
-          <span>All Student</span>
+        <div class="row text-grey-7" style="font-size: 16px">
+          <span class="cursor-pointer q-mr-xs">Student</span> /
+          <span class="q-ml-xs">All Student</span>
         </div>
       </div>
     </div>
@@ -31,25 +31,57 @@
         />
       </div>
       <div>
-        <q-btn label="Searchbar" color="blue"></q-btn>
+        <q-btn push label="Searchbar" color="blue"></q-btn>
       </div>
     </div>
     <div class="q-pa-md">
-      <q-table
-        flat
-        bordered
-        ref="tableRef"
-        title="Treats"
-        :rows="rows"
-        :columns="columns"
-        row-key="name"
-        :selected-rows-label="getSelectedString"
-        selection="multiple"
-        :selected="selected"
-        @selection="onSelection"
-      />
-
-      <div class="q-mt-md">Selected: {{ JSON.stringify(selected) }}</div>
+      <q-card class="q-pa-md">
+        <div class="flex justify-between items-center">
+          <div class="text-h6">Student</div>
+          <div class="flex q-col-gutter-sm">
+            <div>
+              <q-btn class="text-white bg-indigo-10" flat icon="tune"></q-btn>
+            </div>
+            <div>
+              <q-btn
+                class="text-black bg-white"
+                outline
+                icon="grid_view"
+              ></q-btn>
+            </div>
+            <div>
+              <q-btn
+                class="text-white bg-indigo-10"
+                flat
+                icon="download"
+                label="Download"
+              ></q-btn>
+            </div>
+            <div>
+              <q-btn class="text-white bg-indigo-10" flat icon="add"></q-btn>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center q-col-gutter-sm">
+          <div class="q-mt-md">Show</div>
+          <div class="q-mt-lg" style="width: 60px">
+            <q-select dense outlined model="null" :options="['1', '2']" />
+          </div>
+          <div class="q-mt-md">Entry</div>
+        </div>
+        <q-table
+          class="q-mt-lg"
+          flat
+          ref="tableRef"
+          :rows="rows"
+          :columns="columns"
+          row-key="name"
+          :selected-rows-label="getSelectedString"
+          selection="multiple"
+          :selected="selected"
+          @selection="onSelection"
+        />
+      </q-card>
     </div>
   </q-page>
 </template>
@@ -207,6 +239,10 @@ export default {
     const tableRef = ref(null);
 
     return {
+      // model: ref(null),
+
+      // options: ["1", "2", "3", "4", "5"],
+
       selected,
       lastIndex,
       tableRef,
