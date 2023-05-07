@@ -5,9 +5,15 @@
         <div class="text-h6 text-bold">Student</div>
       </div>
       <div>
+<<<<<<< Updated upstream
         <div class="row text-grey-7" style="font-size: 16px">
           <span class="cursor-pointer q-mr-xs">Student</span> /
           <span class="q-ml-xs">All Student</span>
+=======
+        <div class="text-grey-7text-caption">
+          <q-btn flat clickable-none>Student</q-btn> /
+          <span>All Student</span>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div>
