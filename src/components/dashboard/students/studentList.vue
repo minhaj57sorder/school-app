@@ -31,7 +31,7 @@
         />
       </div>
       <div>
-        <q-btn push label="Searchbar" color="blue"></q-btn>
+        <q-btn class="search-btn" push label="Searchbar" color="blue"></q-btn>
       </div>
     </div>
     <div class="q-pa-md">
@@ -313,3 +313,9 @@ export default {
   },
 };
 </script>
+<style>
+.search-btn:hover {
+  background-color: red !important;
+  transition: 0.3s;
+}
+</style>

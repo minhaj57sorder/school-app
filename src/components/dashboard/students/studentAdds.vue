@@ -21,12 +21,15 @@
       <div class="row q-col-gutter-lg q-mt-lg">
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <q-input
-            label="Enter Frist Name"
+            class="label-at-top"
+            label="*Enter Frist Name"
             outlined
             square
             for="name"
             type="text"
+            placeholder="Enter First Name"
             v-model="first"
+            :rules="[required]"
           />
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -141,16 +144,22 @@
 <script setup>
 import { ref } from "vue";
 
-const select = ref();
-const blood = ref();
-const clas = ref();
-const first = ref();
-const last = ref();
-const roll = ref();
-const region = ref();
-const email = ref();
-const section = ref();
-const id = ref();
-const number = ref();
+const select = ref(null);
+const blood = ref(null);
+const clas = ref(null);
+const first = ref(null);
+const last = ref(null);
+const roll = ref(null);
+const region = ref(null);
+const email = ref(null);
+const section = ref(null);
+const id = ref(null);
+const number = ref(null);
 const text = ref("my value");
+
+const required = (val) => {
+  return val ? true : "This feild is required.";
+};
 </script>
+<style>
+</style>
