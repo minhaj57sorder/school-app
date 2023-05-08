@@ -33,12 +33,22 @@
                 <q-img
                   style="
                     width: 140px;
-                    border: 8px solid rgb(189, 183, 183);
+                    border: 8px solid rgb(201, 197, 197);
                     border-radius: 70px;
                     margin-top: -85px;
                   "
                   src="https://preschool.dreamguystech.com/template/assets/img/profile-user.jpg"
-                  ><q-icon style="margin: 0 auto" name="border_color"
+                  ><q-icon
+                    style="
+                      margin-left: 45px;
+                      margin-top: 80px;
+                      font-size: 13px;
+                      color: white;
+                      background-color: rgb(41, 41, 148);
+                      padding: 10px;
+                      border-radius: 20px;
+                    "
+                    name="border_color"
                 /></q-img>
               </div>
               <div style="">

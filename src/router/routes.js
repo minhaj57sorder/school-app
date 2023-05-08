@@ -20,6 +20,10 @@ const routes = [
         path: "/student_Views",
         component: () => import("pages/student/studentViews.vue"),
       },
+      {
+        path: "/student_Add",
+        component: () => import("pages/student/studentAdd.vue"),
+      },
     ],
   },
 

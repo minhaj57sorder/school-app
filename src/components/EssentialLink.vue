@@ -36,6 +36,9 @@
         <q-item clickable v-ripple to="/student_Views">
           <q-item-section class="text-center"> Student View </q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/student_Add">
+          <q-item-section class="text-center"> Student Add </q-item-section>
+        </q-item>
       </q-expansion-item>
 
       <q-expansion-item
