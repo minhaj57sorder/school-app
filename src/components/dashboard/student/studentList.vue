@@ -264,7 +264,7 @@ export default {
               selected.value.length > 1 ? "s" : ""
             } selected of ${rows.length}`;
       },
-      model: ref(null),
+      model: ref(10),
       options: ["10", "25", "50", "100"],
     };
   },
