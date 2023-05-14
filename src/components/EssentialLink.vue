@@ -39,39 +39,47 @@
         <q-item clickable v-ripple to="/student_Add">
           <q-item-section class="text-center"> Student Add </q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/student_Edit">
+          <q-item-section class="text-center"> Student Edit </q-item-section>
+        </q-item>
       </q-expansion-item>
 
       <q-expansion-item
         group="somegroup"
         icon="shopping_cart"
-        label="Third"
+        label="Teachers"
         header-class="text-purple"
       >
-        <q-card>
-          <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-            eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-            dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
-          </q-card-section>
-        </q-card>
+        <q-item clickable v-ripple to="/teacher_List">
+          <q-item-section class="text-center"> Teacher List </q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="teacher_View">
+          <q-item-section class="text-center"> Teacher View </q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/teacher_Add">
+          <q-item-section class="text-center"> Teacher Add </q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/teacher_Edit">
+          <q-item-section class="text-center"> Teacher Edit </q-item-section>
+        </q-item>
       </q-expansion-item>
 
       <q-expansion-item
         group="somegroup"
         icon="bluetooth"
-        label="Fourth"
+        label="Invoice"
         header-class="bg-teal text-white"
         expand-icon-class="text-white"
       >
-        <q-card class="bg-teal-2">
-          <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-            eius reprehenderit eos corrupti commodi magni quaerat ex numquam,
-            dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
-          </q-card-section>
-        </q-card>
+        <q-item clickable v-ripple to="invoice_grid">
+          <q-item-section>Invoice Grid</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="invoice_List">
+          <q-item-section>Invoice List</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="add_invoice">
+          <q-item-section>Add Invoice</q-item-section>
+        </q-item>
       </q-expansion-item>
     </q-list>
   </div>

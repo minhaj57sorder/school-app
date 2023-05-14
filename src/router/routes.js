@@ -24,6 +24,42 @@ const routes = [
         path: "/student_Add",
         component: () => import("pages/student/studentAdd.vue"),
       },
+      {
+        path: "/student_Edit",
+        component: () => import("pages/student/studentEdit.vue"),
+      },
+      {
+        path: "/teacher_List",
+        component: () => import("pages/teacher/teacherList.vue"),
+      },
+      {
+        path: "/teacher_View",
+        component: () => import("pages/teacher/teacherViews.vue"),
+      },
+      {
+        path: "/teacher_View",
+        component: () => import("pages/teacher/teacherViews.vue"),
+      },
+      {
+        path: "/teacher_Add",
+        component: () => import("pages/teacher/teacherListAdd.vue"),
+      },
+      {
+        path: "/teacher_Edit",
+        component: () => import("pages/teacher/teacherListEdit.vue"),
+      },
+      {
+        path: "/invoice_grid",
+        component: () => import("pages/invoice/InvoiceGrid.vue"),
+      },
+      {
+        path: "/invoice_List",
+        component: () => import("pages/invoice/invoiceList.vue"),
+      },
+      {
+        path: "/add_invoice",
+        component: () => import("pages/invoice/addInvoice.vue"),
+      },
     ],
   },
 
