@@ -79,7 +79,7 @@ const linksList = [
   {
     title: "Student Dashboard",
     caption: "student related",
-    link: "/",
+    link: "/student_dashboard",
   },
   {
     title: "Teacher Dashboard",
