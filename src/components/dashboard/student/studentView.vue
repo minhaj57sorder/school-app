@@ -29,11 +29,27 @@
                   alt="dddd"
                 />
               </div>
-            </div>
-            <div>
-              <q-avatar>
-                <img src="https://cdn.quasar.dev/img/avatar.png" />
-              </q-avatar>
+              <div class="flex q-col-gutter-xl q-pa-md">
+                <div>
+                  <div class="text-bold text-body1">Bruce Willis</div>
+                  <div class="text-grey-7">Computer Science</div>
+                </div>
+                <div>
+                  <div class="">Followers</div>
+                  <div class="text-bold text-body1">2850</div>
+                </div>
+                <div>
+                  <div class="">Followers</div>
+                  <div class="text-bold text-body1">2850</div>
+                </div>
+                <div>
+                  <div class="">Followers</div>
+                  <div class="text-bold text-body1">2850</div>
+                </div>
+                <div>
+                  <q-btn rounded color="primary" label=" Rounded" />
+                </div>
+              </div>
             </div>
           </div>
         </q-page>
