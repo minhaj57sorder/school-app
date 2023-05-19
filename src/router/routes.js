@@ -13,6 +13,11 @@ const routes = [
         component: () =>
           import("src/components/dashboard/student/studentList.vue"),
       },
+      {
+        path: "/student_view",
+        component: () =>
+          import("src/components/dashboard/student/studentView.vue"),
+      },
     ],
   },
 

@@ -16,10 +16,10 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
-        <q-card>
+        <div>
           <calendarSection />
           <upcomingEvent />
-        </q-card>
+        </div>
       </div>
     </div>
   </q-page>
