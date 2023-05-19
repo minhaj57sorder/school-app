@@ -1,7 +1,13 @@
 <template>
   <div class="row justify-between items-center">
     <div class="text-h6">Students</div>
-    <div>Student<span> / </span>All Students</div>
+    <div class="text-body1">
+      <div class="row">
+        <div class="text-bold cursor-pointer">Student</div>
+        <span> / </span>
+        <div>All Student</div>
+      </div>
+    </div>
   </div>
   <div class="row q-col-gutter-lg items-center">
     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
