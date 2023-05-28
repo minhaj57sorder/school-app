@@ -14,7 +14,6 @@
           <q-icon name="more_vert" color="grey-7"></q-icon>
         </div>
       </div>
-
       <div>
         <div class="q-pa-sm">
           <q-img
