@@ -68,8 +68,8 @@
         group="somegroup"
         icon="bluetooth"
         label="Invoice"
-        header-class="bg-teal text-white"
-        expand-icon-class="text-white"
+        header-class=" text-pink"
+        expand-icon-class="text-pink"
       >
         <q-item clickable v-ripple to="invoice_grid">
           <q-item-section>Invoice Grid</q-item-section>
@@ -79,6 +79,29 @@
         </q-item>
         <q-item clickable v-ripple to="add_invoice">
           <q-item-section>Add Invoice</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/invoice_detail">
+          <q-item-section>Add Details</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/invoiceSettings">
+          <q-item-section>Invoice Setting</q-item-section>
+        </q-item>
+      </q-expansion-item>
+      <q-expansion-item
+        group="somegroup"
+        icon="bluetooth"
+        label="Account"
+        header-class=" text-green"
+        expand-icon-class="text-green"
+      >
+        <q-item clickable v-ripple to="/feesCollection">
+          <q-item-section>Fees Collection</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/expenSes">
+          <q-item-section>Expenses</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/addFees">
+          <q-item-section>Addfees</q-item-section>
         </q-item>
       </q-expansion-item>
     </q-list>

@@ -60,6 +60,26 @@ const routes = [
         path: "/add_invoice",
         component: () => import("pages/invoice/addInvoice.vue"),
       },
+      {
+        path: "/invoice_detail",
+        component: () => import("pages/invoice/invoiceDetail.vue"),
+      },
+      {
+        path: "/invoiceSettings",
+        component: () => import("pages/invoice/invoiceSettings.vue"),
+      },
+      {
+        path: "/feesCollection",
+        component: () => import("pages/account/feesCollection.vue"),
+      },
+      {
+        path: "/expenSes",
+        component: () => import("pages/account/expenSes.vue"),
+      },
+      {
+        path: "/addFees",
+        component: () => import("pages/account/addFees.vue"),
+      },
     ],
   },
 
