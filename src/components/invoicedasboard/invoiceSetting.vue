@@ -30,7 +30,25 @@
         <div class="row items-center q-pa-md">
           <div class="col-3">Invoice Ammount</div>
           <div class="col-9">
-            <q-input outlined />
+            <q-input
+              ref="invoiceAmountEl"
+              v-model="invoiceAmount"
+              label="Invoice Amount"
+              outlined
+              :rules="[(val) => !!val || 'Field is required']"
+            />
+          </div>
+        </div>
+        <div class="row items-center q-pa-md">
+          <div class="col-3">Invoice Ammount</div>
+          <div class="col-9">
+            <q-input
+              ref="invoiceAmount2El"
+              v-model="invoiceAmount2"
+              label="Invoice Amount"
+              outlined
+              :rules="[(val) => !!val || 'Field is required']"
+            />
           </div>
         </div>
         <div class="row items-center q-col-gutter-md q-pa-md">
@@ -60,13 +78,17 @@
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Default Digital Signatory</div>
           <div class="col-9">
-            <q-input outlined
-              ><q-file
+            <div class="flex relative-position">
+              <q-input outlined dense class="full-width" />
+              <q-file
+                class="absolute-right"
+                style="height: 50px"
                 label-color="white"
                 label="Upload File"
                 bg-color="red"
                 dense
-            /></q-input>
+              />
+            </div>
           </div>
         </div>
         <div class="row items-center q-col-gutter-md q-pa-md">
@@ -77,10 +99,27 @@
         </div>
         <div class="row justify-end q-col-gutter-md q-pa-md">
           <div><q-btn color="red" label="Cancel" /></div>
-          <div><q-btn color="blue" label="Save Change" /></div>
+          <div>
+            <q-btn color="blue" label="Save Change" @click="saveChanges" />
+          </div>
         </div>
       </div>
     </div>
   </q-page>
 </template>
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const invoiceAmount2 = ref(null);
+const invoiceAmount = ref(null);
+const invoiceAmountEl = ref(null);
+const invoiceAmount2El = ref(null);
+const saveChanges = () => {
+  invoiceAmountEl.value.validate();
+  invoiceAmount2El.value.validate();
+  if (invoiceAmountEl.value.hasError || invoiceAmount2El.value.hasError) {
+    console.log("Failed");
+    return;
+  }
+  console.log("Passed");
+};
+</script>
