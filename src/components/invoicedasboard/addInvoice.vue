@@ -82,7 +82,7 @@
       </div>
       <div class="text-h6 q-mt-lg q-mb-md">Item Details</div>
       <div>
-        <q-markup-table class="shadow-0">
+        <q-markup-table class="shadow-0" separator="horizontal">
           <thead>
             <tr
               class="items-center"
@@ -96,9 +96,33 @@
               <td>Discount</td>
               <td>Action</td>
             </tr>
+            <tr>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+              <td><q-separator /></td>
+            </tr>
           </thead>
 
           <tbody>
+            <tr>
+              <td><q-input outlined /></td>
+              <td><q-input outlined /></td>
+              <td><q-input outlined /></td>
+              <td><q-input outlined /></td>
+              <td><q-input outlined /></td>
+              <td><q-input outlined /></td>
+              <td>
+                <div class="row items-center justify-between">
+                  <div><q-icon name="add" /></div>
+                  <div><q-icon name="content_copy" /></div>
+                  <div><q-icon name="delete" /></div>
+                </div>
+              </td>
+            </tr>
             <tr>
               <td><q-input outlined /></td>
               <td><q-input outlined /></td>
@@ -157,6 +181,8 @@
               switch-toggle-side
               expand-separator
               icon="add"
+              expand-icon="edite"
+              expanded-icon="more_vert"
               label="Add Terms & Conditions"
             >
               <q-card>
