@@ -2,17 +2,17 @@
   <div class="q-pa-lg">
     <div class="row justify-between q-pa-lg items-center">
       <div>
-        <div class="text-h6 text-bold">Add Fees</div>
+        <div class="text-h6 text-bold">Add Expanses</div>
       </div>
       <div>
         <div class="row text-grey-7" style="font-size: 16px">
           <span class="cursor-pointer q-mr-xs">Account </span>/
-          <span class="q-ml-xs">Add Fees</span>
+          <span class="q-ml-xs">Expense Information</span>
         </div>
       </div>
     </div>
     <q-card class="q-pa-md">
-      <div class="text-h6 q-mb-md">Fees Information</div>
+      <div class="text-h6 q-mb-md">Expense Information</div>
       <div class="row q-col-gutter-md">
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <div><q-input outlined dense label="Student ID" /></div>
@@ -22,25 +22,12 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <div>
-            <q-select
-              outlined
-              dense
-              label="gender*"
-              v-model="gender"
-              :options="options"
-            />
+            <q-select outlined dense label="gender*" />
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <div>
-            <q-select
-              outlined
-              type="date"
-              dense
-              label="Student ID"
-              v-model="type"
-              :options="options2"
-            />
+            <q-select outlined type="date" dense label="Student ID" />
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -48,13 +35,7 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <div>
-            <q-input
-              outlined
-              dense
-              label="Student ID"
-              type="date"
-              v-model="date"
-            />
+            <q-input outlined dense label="Student ID" />
           </div>
         </div>
       </div>
@@ -65,14 +46,4 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const gender = ref(null);
-const options = ["Google", "Facebook", "Twitter", "Apple", "Oracle"];
-
-const type = ref(null);
-const options2 = ["Google", "Facebook", "Twitter", "Apple", "Oracle"];
-
-const date = ref("my value");
-</script>
+<script setup></script>

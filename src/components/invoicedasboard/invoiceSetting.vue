@@ -39,47 +39,68 @@
             />
           </div>
         </div>
-        <div class="row items-center q-pa-md">
-          <div class="col-3">Invoice Ammount</div>
+
+        <div class="row items-center q-col-gutter-md q-pa-md">
+          <div class="col-3">Invoice number starts with</div>
           <div class="col-9">
             <q-input
-              ref="invoiceAmount2El"
-              v-model="invoiceAmount2"
-              label="Invoice Amount"
+              ref="invoiceNumberEl"
+              v-model="invoiceNumber"
+              :rules="[(val) => !!val || 'Field is must requiard']"
               outlined
-              :rules="[(val) => !!val || 'Field is required']"
+              label="$"
             />
           </div>
         </div>
         <div class="row items-center q-col-gutter-md q-pa-md">
-          <div class="col-3">Invoice number starts with</div>
-          <div class="col-9">
-            <q-input outlined label="$" />
-          </div>
-        </div>
-        <div class="row items-center q-col-gutter-md q-pa-md">
+          <!--this ia number 3-->
           <div class="col-3">Prefix</div>
           <div class="col-9">
-            <q-input outlined />
+            <q-input
+              ref="invoicePrefixEl"
+              v-model="invoicePrefix"
+              :rules="[(val) => !!val || 'Field is must requiard']"
+              outlined
+            />
           </div>
         </div>
+        <!--this ia number 4-->
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Number Reset</div>
           <div class="col-9">
-            <q-input outlined />
+            <q-input
+              ref="invoiceResetEl"
+              v-model="invoiceReset"
+              :rules="[(val) => !!val || 'Field is must requiard']"
+              outlined
+            />
           </div>
         </div>
+        <!--this ia number 5-->
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Default Due Time</div>
           <div class="col-9">
-            <q-input outlined />
+            <q-input
+              ref="invoiceTimeEl"
+              v-model="invoiceTime"
+              :rules="[(val) => !!val || 'Field is must requiard']"
+              outlined
+            />
           </div>
         </div>
+        <!--this ia number 6-->
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Default Digital Signatory</div>
           <div class="col-9">
             <div class="flex relative-position">
-              <q-input outlined dense class="full-width" />
+              <q-input
+                ref="invoiceDigitalEl"
+                v-model="invoiceDigital"
+                :rules="[(val) => !!val || 'Field is must requiard']"
+                outlined
+                dense
+                class="full-width"
+              />
               <q-file
                 class="absolute-right"
                 style="height: 50px"
@@ -94,7 +115,12 @@
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Default Digital Name</div>
           <div class="col-9">
-            <q-input outlined />
+            <q-input
+              ref="invoiceNameEl"
+              v-model="invoiceName"
+              :rules="[(val) => !!val || 'Field is must requiard']"
+              outlined
+            />
           </div>
         </div>
         <div class="row justify-end q-col-gutter-md q-pa-md">
@@ -109,14 +135,34 @@
 </template>
 <script setup>
 import { ref } from "vue";
-const invoiceAmount2 = ref(null);
+
 const invoiceAmount = ref(null);
 const invoiceAmountEl = ref(null);
-const invoiceAmount2El = ref(null);
+const invoiceNumber = ref(null);
+const invoiceNumberEl = ref(null);
+const invoicePrefix = ref(null);
+const invoicePrefixEl = ref(null);
+const invoiceReset = ref(null);
+const invoiceResetEl = ref(null);
+const invoiceTime = ref(null);
+const invoiceTimeEl = ref(null);
+const invoiceDigital = ref(null);
+const invoiceDigitalEl = ref(null);
+const invoiceName = ref(null);
+const invoiceNameEl = ref(null);
+
 const saveChanges = () => {
   invoiceAmountEl.value.validate();
-  invoiceAmount2El.value.validate();
-  if (invoiceAmountEl.value.hasError || invoiceAmount2El.value.hasError) {
+
+  if (
+    invoiceAmountEl.value.hasError ||
+    invoiceNumberEl.value.hasError ||
+    invoicePrefixEl.value.hasError ||
+    invoiceResetEl.value.hasError ||
+    invoiceTimeEl.value.hasError ||
+    invoiceDigitalEl.value.hasError ||
+    invoiceNameEl.value.hasError
+  ) {
     console.log("Failed");
     return;
   }

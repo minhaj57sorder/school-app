@@ -31,18 +31,7 @@
             />
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-          <div>
-            <q-select
-              outlined
-              type="date"
-              dense
-              label="Student ID"
-              v-model="type"
-              :options="options2"
-            />
-          </div>
-        </div>
+
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <div><q-input outlined dense label="Student ID" /></div>
         </div>
@@ -70,9 +59,6 @@ import { ref } from "vue";
 
 const gender = ref(null);
 const options = ["Google", "Facebook", "Twitter", "Apple", "Oracle"];
-
-const type = ref(null);
-const options2 = ["Google", "Facebook", "Twitter", "Apple", "Oracle"];
 
 const date = ref("my value");
 </script>

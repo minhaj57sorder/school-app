@@ -87,9 +87,10 @@
           <q-item-section>Invoice Setting</q-item-section>
         </q-item>
       </q-expansion-item>
+      <div class="q-pa-md text-grey-6">Managemant</div>
       <q-expansion-item
         group="somegroup"
-        icon="bluetooth"
+        icon="group"
         label="Account"
         header-class=" text-green"
         expand-icon-class="text-green"
@@ -101,9 +102,51 @@
           <q-item-section>Expenses</q-item-section>
         </q-item>
         <q-item clickable v-ripple to="/addFees">
-          <q-item-section>Addfees</q-item-section>
+          <q-item-section>Add Fees</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/addExpanses">
+          <q-item-section>Add Expanses</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/addSalary">
+          <q-item-section>Add Salary</q-item-section>
         </q-item>
       </q-expansion-item>
+      <q-item clickable v-ripple to="/holyDay">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Holiday</div>
+        </div>
+      </q-item>
+      <q-item clickable v-ripple to="/feesPage">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Fees</div>
+        </div>
+      </q-item>
+      <q-item clickable v-ripple to="/holyDay">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Holiday</div>
+        </div>
+      </q-item>
+      <q-item clickable v-ripple to="/holyDay">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Holiday</div>
+        </div>
+      </q-item>
+      <q-item clickable v-ripple to="/holyDay">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Holiday</div>
+        </div>
+      </q-item>
+      <q-item clickable v-ripple to="/holyDay">
+        <div class="flex items-center">
+          <div><q-icon name="bolt" size="25px" /></div>
+          <div>Holiday</div>
+        </div>
+      </q-item>
     </q-list>
   </div>
 </template>

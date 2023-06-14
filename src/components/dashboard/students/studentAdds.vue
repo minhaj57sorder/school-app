@@ -22,7 +22,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
           <q-input
             class="label-at-top"
-            label="*Enter Frist Name"
+            label="Enter Frist Name"
             outlined
             square
             for="name"
@@ -161,5 +161,4 @@ const required = (val) => {
   return val ? true : "This feild is required.";
 };
 </script>
-<style>
-</style>
+<style></style>

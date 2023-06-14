@@ -80,6 +80,22 @@ const routes = [
         path: "/addFees",
         component: () => import("pages/account/addFees.vue"),
       },
+      {
+        path: "/addExpanses",
+        component: () => import("pages/account/addExpanses.vue"),
+      },
+      {
+        path: "/addSalary",
+        component: () => import("pages/account/addSalary.vue"),
+      },
+      {
+        path: "/holyDay",
+        component: () => import("pages/otherPage/holyDay.vue"),
+      },
+      {
+        path: "/feesPage",
+        component: () => import("pages/otherPage/feesPage.vue"),
+      },
     ],
   },
 

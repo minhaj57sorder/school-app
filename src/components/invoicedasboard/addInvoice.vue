@@ -96,15 +96,6 @@
               <td>Discount</td>
               <td>Action</td>
             </tr>
-            <tr>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-              <td><q-separator /></td>
-            </tr>
           </thead>
 
           <tbody>
