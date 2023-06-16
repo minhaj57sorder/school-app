@@ -123,30 +123,42 @@
           <div>Fees</div>
         </div>
       </q-item>
-      <q-item clickable v-ripple to="/holyDay">
+      <q-item clickable v-ripple to="/examList">
         <div class="flex items-center">
           <div><q-icon name="bolt" size="25px" /></div>
-          <div>Holiday</div>
+          <div>Exam List</div>
         </div>
       </q-item>
-      <q-item clickable v-ripple to="/holyDay">
+      <q-item clickable v-ripple to="/eventPage">
         <div class="flex items-center">
           <div><q-icon name="bolt" size="25px" /></div>
-          <div>Holiday</div>
+          <div>Event Date</div>
         </div>
       </q-item>
-      <q-item clickable v-ripple to="/holyDay">
+      <q-item clickable v-ripple to="/timeTable">
         <div class="flex items-center">
           <div><q-icon name="bolt" size="25px" /></div>
-          <div>Holiday</div>
+          <div>Time Table</div>
         </div>
       </q-item>
-      <q-item clickable v-ripple to="/holyDay">
+      <q-item clickable v-ripple to="/libraryPage">
         <div class="flex items-center">
           <div><q-icon name="bolt" size="25px" /></div>
-          <div>Holiday</div>
+          <div>Library</div>
         </div>
       </q-item>
+
+      <q-expansion-item
+        group="somegroup"
+        icon="rss_feed"
+        label="Blogs"
+        header-class=" text-green"
+        expand-icon-class="text-green"
+      >
+        <q-item clickable v-ripple to="/feesCollection">
+          <q-item-section>Fees Collection</q-item-section>
+        </q-item>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>

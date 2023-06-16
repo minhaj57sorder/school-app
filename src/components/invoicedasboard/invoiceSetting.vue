@@ -22,7 +22,7 @@
         <div class="row items-center q-col-gutter-md q-pa-md">
           <div class="col-3">Invoice Status</div>
           <div class="col-9">
-            <q-checkbox
+            <q-checkbox v-model="value"
               >Change invoice status to paid an order is complete</q-checkbox
             >
           </div>
@@ -108,6 +108,10 @@
                 label="Upload File"
                 bg-color="red"
                 dense
+                ref="fileEl"
+                v-model="file"
+                type="file"
+                :rules="[fileValidate]"
               />
             </div>
           </div>
@@ -136,6 +140,7 @@
 <script setup>
 import { ref } from "vue";
 
+const value = ref(false);
 const invoiceAmount = ref(null);
 const invoiceAmountEl = ref(null);
 const invoiceNumber = ref(null);
@@ -167,5 +172,11 @@ const saveChanges = () => {
     return;
   }
   console.log("Passed");
+};
+
+const fileEl = ref(null);
+const file = ref(null);
+const fileValidate = (val) => {
+  return val instanceof File ? true : "Please Attach File";
 };
 </script>

@@ -96,6 +96,22 @@ const routes = [
         path: "/feesPage",
         component: () => import("pages/otherPage/feesPage.vue"),
       },
+      {
+        path: "/examList",
+        component: () => import("pages/otherPage/examList.vue"),
+      },
+      {
+        path: "/eventPage",
+        component: () => import("pages/otherPage/eventPage.vue"),
+      },
+      {
+        path: "/timeTable",
+        component: () => import("pages/otherPage/timeTable.vue"),
+      },
+      {
+        path: "/libraryPage",
+        component: () => import("pages/otherPage/libraryPage.vue"),
+      },
     ],
   },
 
