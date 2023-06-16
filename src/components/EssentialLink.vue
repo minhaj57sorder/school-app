@@ -113,38 +113,38 @@
       </q-expansion-item>
       <q-item clickable v-ripple to="/holyDay">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Holiday</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Holiday</div>
         </div>
       </q-item>
       <q-item clickable v-ripple to="/feesPage">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Fees</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Fees</div>
         </div>
       </q-item>
       <q-item clickable v-ripple to="/examList">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Exam List</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Exam List</div>
         </div>
       </q-item>
       <q-item clickable v-ripple to="/eventPage">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Event Date</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Event Date</div>
         </div>
       </q-item>
       <q-item clickable v-ripple to="/timeTable">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Time Table</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Time Table</div>
         </div>
       </q-item>
       <q-item clickable v-ripple to="/libraryPage">
         <div class="flex items-center">
-          <div><q-icon name="bolt" size="25px" /></div>
-          <div>Library</div>
+          <div><q-icon color="green" name="bolt" size="25px" /></div>
+          <div class="text-orange">Library</div>
         </div>
       </q-item>
 
