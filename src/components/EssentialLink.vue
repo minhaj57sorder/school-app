@@ -155,8 +155,8 @@
         header-class=" text-green"
         expand-icon-class="text-green"
       >
-        <q-item clickable v-ripple to="/feesCollection">
-          <q-item-section>Fees Collection</q-item-section>
+        <q-item clickable v-ripple to="/allBlogs">
+          <q-item-section>All Blogs</q-item-section>
         </q-item>
       </q-expansion-item>
     </q-list>

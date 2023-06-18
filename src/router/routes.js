@@ -112,6 +112,10 @@ const routes = [
         path: "/libraryPage",
         component: () => import("pages/otherPage/libraryPage.vue"),
       },
+      {
+        path: "/allBlogs",
+        component: () => import("pages/blogs/allBlogs.vue"),
+      },
     ],
   },
 
