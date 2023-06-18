@@ -84,7 +84,7 @@
           </div>
           <div class="q-mt-md">
             Learning is an objective, Lorem Ipsum is not Lorem ipsum dolor sit
-            amet, consectetur em adipiscing elit, sed do eiusmod tempor.
+            amet, consectetur em adipiscing elit, sed do eiusmod tempor.sdf
           </div>
 
           <div class="row justify-between items-center q-mt-sm">
