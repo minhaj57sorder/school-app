@@ -31,15 +31,6 @@
           />
         </div>
       </div>
-      <div>
-        <q-btn
-          label="Add Blog"
-          icon="add_circle"
-          padding="10px "
-          color="blue"
-          unelevated
-        />
-      </div>
     </div>
     <div class="q-mt-lg row q-col-gutter-md">
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12">
