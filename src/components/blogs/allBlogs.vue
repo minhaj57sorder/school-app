@@ -23,7 +23,6 @@
             outline
             :class="[activeBlogsModel ? 'bg-white' : 'bg-grey-4']"
             :text-color="activeBlogsModel ? 'blue' : 'black'"
-            percentage="0.0<*< 100.0"
             @click="
               () => {
                 activeBlogsModel = true;
