@@ -158,6 +158,12 @@
         <q-item clickable v-ripple to="/allBlogs">
           <q-item-section>All Blogs</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/addBlogs">
+          <q-item-section>Add Blogs</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/editBlogs">
+          <q-item-section>Edit Blogs</q-item-section>
+        </q-item>
       </q-expansion-item>
     </q-list>
   </div>

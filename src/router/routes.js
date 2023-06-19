@@ -116,6 +116,14 @@ const routes = [
         path: "/allBlogs",
         component: () => import("pages/blogs/allBlogs.vue"),
       },
+      {
+        path: "/addBlogs",
+        component: () => import("pages/blogs/addBlogs.vue"),
+      },
+      {
+        path: "/editBlogs",
+        component: () => import("pages/blogs/editeBlogs.vue"),
+      },
     ],
   },
 
