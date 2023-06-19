@@ -124,6 +124,18 @@ const routes = [
         path: "/editBlogs",
         component: () => import("pages/blogs/editeBlogs.vue"),
       },
+      {
+        path: "/loginPage",
+        component: () => import("pages/loginpage/loginPage.vue"),
+      },
+      {
+        path: "/signUP",
+        component: () => import("pages/loginpage/signUP.vue"),
+      },
+      {
+        path: "/reSet",
+        component: () => import("pages/loginpage/reSet.vue"),
+      },
     ],
   },
 

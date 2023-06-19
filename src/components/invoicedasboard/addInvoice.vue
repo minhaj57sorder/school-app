@@ -49,10 +49,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
           <div>
-            <q-checkbox model="teal" label="Enable Tax" color="teal" />
+            <q-checkbox v-model="teal" label="Enable Tax" color="teal" />
           </div>
           <div>
-            <q-checkbox model="teal" label="Recurring invoice" color="teal" />
+            <q-checkbox
+              v-model="teal1"
+              label="Recurring invoice"
+              color="teal"
+            />
           </div>
         </div>
       </div>
@@ -241,4 +245,8 @@
   border-bottom: 1px solid red !important;
 }
 </style>
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const teal = ref(false);
+const teal1 = ref(false);
+</script>

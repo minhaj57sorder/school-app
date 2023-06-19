@@ -165,6 +165,23 @@
           <q-item-section>Edit Blogs</q-item-section>
         </q-item>
       </q-expansion-item>
+      <q-expansion-item
+        group="somegroup"
+        icon="visibility"
+        label="Autentication"
+        header-class=" text-green"
+        expand-icon-class="text-green"
+      >
+        <q-item clickable v-ripple to="/loginPage">
+          <q-item-section>Login Page</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/signUP">
+          <q-item-section>Register</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/reSet">
+          <q-item-section>Reset Password</q-item-section>
+        </q-item>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>
