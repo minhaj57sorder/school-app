@@ -136,6 +136,18 @@ const routes = [
         path: "/reSet",
         component: () => import("pages/loginpage/reSet.vue"),
       },
+      {
+        path: "/erroR",
+        component: () => import("pages/loginpage/erroR.vue"),
+      },
+      {
+        path: "/settingPage",
+        component: () => import("pages/setting/settingPage.vue"),
+      },
+      {
+        path: "/blankPage",
+        component: () => import("pages/setting/PagE.vue"),
+      },
     ],
   },
 

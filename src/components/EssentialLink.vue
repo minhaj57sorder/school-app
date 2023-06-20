@@ -165,6 +165,15 @@
           <q-item-section>Edit Blogs</q-item-section>
         </q-item>
       </q-expansion-item>
+      <q-item clickable v-ripple to="/settingPage">
+        <div class="flex items-center">
+          <div class="q-mr-sm">
+            <q-icon color="green" name="settings" size="25px" />
+          </div>
+          <div class="text-orange">Setting</div>
+        </div>
+      </q-item>
+      <div class="q-pa-md text-grey-6">Pages</div>
       <q-expansion-item
         group="somegroup"
         icon="visibility"
@@ -181,7 +190,28 @@
         <q-item clickable v-ripple to="/reSet">
           <q-item-section>Reset Password</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/erroR">
+          <q-item-section>Error Page</q-item-section>
+        </q-item>
       </q-expansion-item>
+      <q-item clickable v-ripple to="/blankPage">
+        <div class="row items-center">
+          <div class="q-mr-md">
+            <q-icon color="green" name="description" size="25px" />
+          </div>
+          <div class="text-orange">Blank Page</div>
+        </div>
+      </q-item>
+      <div class="q-pa-md text-grey-6">Sports Page</div>
+      <q-item clickable v-ripple to="/erroR">
+        <q-item-section>Error Page</q-item-section>
+      </q-item>
+      <q-item clickable v-ripple to="/erroR">
+        <q-item-section>Error Page</q-item-section>
+      </q-item>
+      <q-item clickable v-ripple to="/erroR">
+        <q-item-section>Error Page</q-item-section>
+      </q-item>
     </q-list>
   </div>
 </template>
