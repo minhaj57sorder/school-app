@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="q-mt-md text-h5">hello</div>
+    <div class="q-mt-md q-pa-lg">Contents here</div>
   </q-page>
 </template>
 <script setup></script>

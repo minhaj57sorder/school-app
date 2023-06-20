@@ -148,6 +148,18 @@ const routes = [
         path: "/blankPage",
         component: () => import("pages/setting/PagE.vue"),
       },
+      {
+        path: "/sportsPage",
+        component: () => import("pages/sports/sportsPage.vue"),
+      },
+      {
+        path: "/hostelPage",
+        component: () => import("pages/sports/hostelPage.vue"),
+      },
+      {
+        path: "/transPort",
+        component: () => import("pages/sports/transPort.vue"),
+      },
     ],
   },
 

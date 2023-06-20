@@ -203,14 +203,29 @@
         </div>
       </q-item>
       <div class="q-pa-md text-grey-6">Sports Page</div>
-      <q-item clickable v-ripple to="/erroR">
-        <q-item-section>Error Page</q-item-section>
+      <q-item clickable v-ripple to="/sportsPage">
+        <div class="row items-center">
+          <div class="q-mr-md">
+            <q-icon color="green" name="sports_basketball" size="25px" />
+          </div>
+          <div class="text-orange">Sports</div>
+        </div>
       </q-item>
-      <q-item clickable v-ripple to="/erroR">
-        <q-item-section>Error Page</q-item-section>
+      <q-item clickable v-ripple to="/hostelPage">
+        <div class="row items-center">
+          <div class="q-mr-md">
+            <q-icon color="green" name="gite" size="25px" />
+          </div>
+          <div class="text-orange">Hostel</div>
+        </div>
       </q-item>
-      <q-item clickable v-ripple to="/erroR">
-        <q-item-section>Error Page</q-item-section>
+      <q-item clickable v-ripple to="/transPort">
+        <div class="row items-center">
+          <div class="q-mr-md">
+            <q-icon color="green" name="local_shipping" size="25px" />
+          </div>
+          <div class="text-orange">Transport</div>
+        </div>
       </q-item>
     </q-list>
   </div>
